@@ -14,22 +14,20 @@ If you use git worktrees heavily, you've probably lost track of which ones exist
 
 ## Install
 
-Requires [Bun](https://bun.sh).
+Requires [Bun](https://bun.sh) (v1.0+). This won't work with Node.
 
 ```sh
-git clone https://github.com/mikecfisher/fish-tree.git
-cd fish-tree
-bun install
+bun install -g fish-tree
 ```
 
-Set up the shell wrapper so `ft` can change your working directory:
+Then set up the shell wrapper so `ft` can `cd` you into worktrees:
 
 ```sh
-bun run src/index.ts install       # auto-detects your shell
-bun run src/index.ts install --all # fish + bash + zsh
+ft install       # auto-detects your shell
+ft install --all # fish + bash + zsh
 ```
 
-Restart your shell (or `source` the relevant rc file), then you can use `ft` directly.
+Restart your shell (or `source` the relevant rc file) and you're good to go.
 
 ## Usage
 
