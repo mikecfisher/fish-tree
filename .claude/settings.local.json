@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bunx tsc:*)",
+      "Bash(bun test:*)",
+      "Bash(bun link:*)",
+      "Bash(fish-tree help:*)",
+      "Bash(bun run:*)",
+      "WebFetch(domain:opentui.com)",
+      "Bash(env FT_RESULT_FILE=/tmp/test456 bun:*)",
+      "Bash(curl:*)",
+      "Bash(bun:*)"
+    ]
+  }
+}

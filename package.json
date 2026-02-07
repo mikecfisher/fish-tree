@@ -3,14 +3,19 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "bin": {
+    "fish-tree": "./src/index.ts"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/react": "^19.0.0"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
     "@opentui/core": "^0.1.77",
-    "@opentui/react": "^0.1.77"
+    "@opentui/react": "^0.1.77",
+    "react": "^19.0.0"
   }
 }
